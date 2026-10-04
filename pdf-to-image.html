@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDF to Image - ImageTools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Image<span>Tools</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#tools">Tools</a>
+
+            <a href="index.html#about">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>📄 PDF to Image</h1>
+
+        <p>
+            Convert every page of your PDF into high-quality JPG images.
+        </p>
+
+    </section>
+
+
+    <main>
+
+        <div class="tool-card">
+
+            <h2>Select PDF</h2>
+
+            <p>
+                Upload a PDF file and convert its pages into images.
+            </p>
+
+            <br>
+
+            <input
+                type="file"
+                id="pdfInput"
+                accept="application/pdf"
+            >
+
+            <br><br>
+
+            <button onclick="convertPDF()">
+                Convert to Images
+            </button>
+
+            <div id="output"></div>
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <script src="pdf-to-image.js"></script>
+
+</body>
+
+</html>

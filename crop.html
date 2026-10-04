@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crop Image - ImageTools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Image<span>Tools</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="index.html#tools">Tools</a>
+            <a href="index.html#about">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>✂️ Crop Image</h1>
+
+        <p>
+            Crop your image quickly and download the cropped image.
+        </p>
+
+    </section>
+
+
+    <main>
+
+        <div class="tool-card">
+
+            <h2>Select Image</h2>
+
+            <p>
+                Upload an image and crop it easily.
+            </p>
+
+            <br>
+
+            <input
+                type="file"
+                id="cropInput"
+                accept="image/*"
+            >
+
+            <br><br>
+
+            <canvas id="cropCanvas"></canvas>
+
+            <br><br>
+
+            <button onclick="cropImage()">
+                Crop & Download
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="crop.js"></script>
+
+</body>
+
+</html>

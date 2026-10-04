@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resize Image - ImageTools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Image<span>Tools</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="index.html#tools">Tools</a>
+            <a href="index.html#about">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>📏 Resize Image</h1>
+
+        <p>
+            Resize your image while maintaining its original proportions.
+        </p>
+
+    </section>
+
+
+    <main>
+
+        <div class="tool-card">
+
+            <h2>Select Image</h2>
+
+            <p>
+                Upload an image and enter the desired dimensions.
+            </p>
+
+            <br>
+
+            <input
+                type="file"
+                id="resizeInput"
+                accept="image/*"
+            >
+
+            <br><br>
+
+
+            <label>Width (px)</label>
+
+            <br>
+
+            <input
+                type="number"
+                id="widthInput"
+                placeholder="Enter width"
+            >
+
+            <br><br>
+
+
+            <label>Height (px)</label>
+
+            <br>
+
+            <input
+                type="number"
+                id="heightInput"
+                placeholder="Enter height"
+            >
+
+            <br><br>
+
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="aspectRatio"
+                    checked
+                >
+
+                Maintain Aspect Ratio
+
+            </label>
+
+            <br><br>
+
+
+            <button onclick="resizeImage()">
+                Resize & Download
+            </button>
+
+            <br><br>
+
+            <canvas id="resizeCanvas"></canvas>
+
+        </div>
+
+    </main>
+
+
+    <script src="resize.js"></script>
+
+</body>
+
+</html>

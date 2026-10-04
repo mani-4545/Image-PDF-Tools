@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image to PDF - ImageTools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Image<span>Tools</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#tools">Tools</a>
+            <a href="index.html#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>🖼️ Image to PDF</h1>
+
+        <p>
+            Convert one or multiple images into a single PDF file.
+        </p>
+
+    </section>
+<a href="index.html" class="back-home">
+    ← Back to Home
+</a>
+
+    <main>
+
+        <div class="tool-card">
+
+            <h2>Select Images</h2>
+
+            <p>
+                You can select multiple images at once.
+            </p>
+
+            <br>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                multiple
+            >
+
+            <br><br>
+
+            <button onclick="createPDF()">
+                Convert to PDF
+            </button>
+
+            <div id="preview"></div>
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="image-to-pdf.js"></script>
+
+</body>
+
+</html>

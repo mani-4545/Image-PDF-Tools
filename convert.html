@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Convert Image - ImageTools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Image<span>Tools</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="index.html#tools">Tools</a>
+            <a href="index.html#about">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>🔄 Convert Image</h1>
+
+        <p>
+            Convert your image between JPG, PNG and WebP formats.
+        </p>
+
+    </section>
+
+
+    <main>
+
+        <div class="tool-card">
+
+            <h2>Select Image</h2>
+
+            <p>
+                Upload an image and choose your desired format.
+            </p>
+
+            <br>
+
+            <input
+                type="file"
+                id="convertInput"
+                accept="image/*"
+            >
+
+            <br><br>
+
+            <div id="preview"></div>
+
+            <br>
+
+            <label>Choose Format</label>
+
+            <br><br>
+
+            <select id="formatInput">
+
+                <option value="image/jpeg">
+                    JPG
+                </option>
+
+                <option value="image/png">
+                    PNG
+                </option>
+
+                <option value="image/webp">
+                    WebP
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <button onclick="convertImage()">
+                Convert & Download
+            </button>
+
+            <br><br>
+
+            <div id="result"></div>
+
+        </div>
+
+    </main>
+
+
+    <script src="convert.js"></script>
+
+</body>
+
+</html>
